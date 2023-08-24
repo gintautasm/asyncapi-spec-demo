@@ -1,0 +1,106 @@
+asyncapi: 2.6.0
+info:
+  title: set-service-name-here
+  version: 1.0.1
+channels:
+  event.dev.bread.and.butter:
+    publish:
+      message:
+        payload:
+          type: object
+          properties:
+            my_field1:
+              type: integer
+              minimum: -2147483648
+              maximum: 2147483647
+              description: The int type is a 32-bit signed integer.
+              default: 0
+              x-parser-schema-id: <anonymous-schema-1>
+            my_field2:
+              type: number
+              format: double
+              description: >-
+                The double type is a double precision (64-bit) IEEE 754
+                floating-point number.
+              default: 0
+              x-parser-schema-id: <anonymous-schema-2>
+            my_field3:
+              type: string
+              description: The string is a unicode character sequence.
+              default: ''
+              x-parser-schema-id: <anonymous-schema-3>
+          description: Sample schema to help you get started.
+          x-parser-schema-id: event.dev.bread.and.butter
+        x-parser-original-payload:
+          doc: Sample schema to help you get started.
+          fields:
+            - default: 0
+              doc: The int type is a 32-bit signed integer.
+              name: my_field1
+              type: int
+            - default: 0
+              doc: >-
+                The double type is a double precision (64-bit) IEEE 754
+                floating-point number.
+              name: my_field2
+              type: double
+            - default: ''
+              doc: The string is a unicode character sequence.
+              name: my_field3
+              type: string
+          name: butter
+          namespace: event.dev.bread.and
+          type: record
+        x-parser-message-name: <anonymous-message-1>
+  dev-bin.delete-me.topic:
+    publish:
+      message:
+        payload:
+          type: object
+          properties:
+            my_field1:
+              type: integer
+              minimum: -2147483648
+              maximum: 2147483647
+              description: The int type is a 32-bit signed integer.
+              default: 0
+              x-parser-schema-id: <anonymous-schema-1>
+            my_field2:
+              type: number
+              format: double
+              description: >-
+                The double type is a double precision (64-bit) IEEE 754
+                floating-point number.
+              default: 0
+              x-parser-schema-id: <anonymous-schema-2>
+            my_field3:
+              type: string
+              description: The string is a unicode character sequence.
+              default: ''
+              x-parser-schema-id: <anonymous-schema-3>
+          description: Sample schema to help you get started.
+          x-parser-schema-id: event.dev.bread.and.butter
+        x-parser-original-payload:
+          doc: Sample schema to help you get started.
+          fields:
+            - default: 0
+              doc: The int type is a 32-bit signed integer.
+              name: my_field1
+              type: int
+            - default: 0
+              doc: >-
+                The double type is a double precision (64-bit) IEEE 754
+                floating-point number.
+              name: my_field2
+              type: double
+            - default: ''
+              doc: The string is a unicode character sequence.
+              name: my_field3
+              type: string
+          name: butter
+          namespace: event.dev.bread.and
+          type: record
+        x-parser-message-name: <anonymous-message-1>
+x-parser-spec-parsed: true
+x-parser-api-version: 1
+x-parser-spec-stringified: true
